@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JDM</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+
+  <!--===== HEADER =====-->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">VEN1KFC</span>
+        <span class="logo-tag">JDM CULTURE</span>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="/">Каталог</a></li>
+          <li><a href="#">История JDM</a></li>
+          <li><a href="#">Мой гараж</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Сообщество</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="redline"></div>
+  </header>
+
+  <!--===== CAR PAGE =====-->
+  <main class="car-page">
+
+    <div class="car-back">
+      <a href="/">← НАЗАД В КАТАЛОГ</a>
+    </div>
+
+    <section class="car-header">
+
+      <div class="car-title">
+        <span id="car-brand" class="section-label"></span>
+        <h1 id="car-name"></h1>
+        <p id="car-year"></p>
+      </div>
+
+    </section>
+
+
+    <section class="car-main">
+
+      <div class="car-main-image">
+        <img id="car-image" src="" alt="">
+      </div>
+
+      <aside class="car-infobox">
+
+        <h2>ОБЩАЯ ИНФОРМАЦИЯ</h2>
+
+        <div class="info-row">
+          <span>Производитель</span>
+          <strong id="car-manufacturer"></strong>
+        </div>
+
+        <div class="info-row">
+          <span>Страна</span>
+          <strong id="car-country"></strong>
+        </div>
+
+        <div class="info-row">
+          <span>Годы выпуска</span>
+          <strong id="car-production"></strong>
+        </div>
+
+        <div class="info-row">
+          <span>Кузов</span>
+          <strong id="car-body"></strong>
+        </div>
+
+        <div class="info-row">
+          <span>Платформа</span>
+          <strong id="car-platform"></strong>
+        </div>
+
+      </aside>
+
+    </section>
+
+    <aside class="car-specs">
+
+        <h2>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
+
+        <div class="spec-group">
+
+          <h3>ДВИГАТЕЛЬ</h3>
+
+          <div class="spec-row">
+            <span>Двигатель</span>
+            <strong id="car-engine"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Объём</span>
+            <strong id="car-volume"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Цилиндры</span>
+            <strong id="car-cylinders"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Мощность</span>
+            <strong id="car-power"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Крутящий момент</span>
+            <strong id="car-torque"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Топливо</span>
+            <strong id="car-fuel"></strong>
+          </div>
+
+        </div>
+
+
+        <div class="spec-group">
+
+          <h3>ТРАНСМИССИЯ</h3>
+
+          <div class="spec-row">
+            <span>Привод</span>
+            <strong id="car-drive"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Коробка</span>
+            <strong id="car-transmission"></strong>
+          </div>
+
+        </div>
+
+
+        <div class="spec-group">
+
+          <h3>ГАБАРИТЫ</h3>
+
+          <div class="spec-row">
+            <span>Длина</span>
+            <strong id="car-length"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Ширина</span>
+            <strong id="car-width"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Высота</span>
+            <strong id="car-height"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Колёсная база</span>
+            <strong id="car-wheelbase"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Масса</span>
+            <strong id="car-weight"></strong>
+          </div>
+
+        </div>
+
+
+        <div class="spec-group">
+
+          <h3>ДИНАМИКА</h3>
+
+          <div class="spec-row">
+            <span>0–100 км/ч</span>
+            <strong id="car-acceleration"></strong>
+          </div>
+
+          <div class="spec-row">
+            <span>Максимальная скорость</span>
+            <strong id="car-top-speed"></strong>
+          </div>
+
+        </div>
+
+      </aside>
+
+
+    <section class="car-content">
+
+      <article class="car-article">
+
+        <h2>ОБЗОР</h2>
+
+        <p id="car-description"></p>
+
+        <h2>ИСТОРИЯ</h2>
+
+        <p id="car-history"></p>
+
+        <h2>ПОКОЛЕНИЕ</h2>
+
+        <p id="car-generations"></p>
+
+        <h2>ВЕРСИИ И КОМПЛЕКТАЦИИ</h2>
+
+        <ul id="car-versions"></ul>
+
+        <h2>ИНТЕРЕСНЫЕ ФАКТЫ</h2>
+
+        <ul id="car-facts"></ul>
+
+      </article>
+
+
+      
+    </section>
+
+  </main>
+
+
+  <!--===== FOOTER =====-->
+  <footer class="site-footer">
+    <div class="stripe-divider"></div>
+
+    <div class="footer-grid">
+
+      <div class="footer-col footer-brand">
+        <span class="logo-mark">VEN1KFC</span>
+        <p>Сообщество и медиа про японские машины, свап-двигатели, дрифт и горные перевалы. Строим историю, а не гаджеты.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>НАВИГАЦИЯ</h3>
+        <ul class="footer-links">
+          <li><a href="/">Каталог</a></li>
+          <li><a href="#">История JDM</a></li>
+          <li><a href="#">Мой гараж</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Сообщество</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>СООБЩЕСТВО</h3>
+        <ul class="footer-links">
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Discord</a></li>
+        </ul>
+
+        <div class="social-row">
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="Discord">DC</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Touge. Built for the street.</span>
+      <span>MADE VEN1KFC FOR JDMs FAN</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/car.js"></script>
+
+</body>
+</html>
