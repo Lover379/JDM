@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="./images/history/mark.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JDM — Мой гараж</title>
+
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+  <!--===== HEADER =====-->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <div class="logo">
+        <span class="logo-mark">VEN1KFC</span>
+        <span class="logo-tag">JDM CULTURE</span>
+      </div>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="./">Каталог</a></li>
+          <li><a href="./history.html">История JDM</a></li>
+          <li><a href="./garage.html" class="active">Мой гараж</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Сообщество</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="redline"></div>
+
+  </header>
+
+
+  <!--===== GARAGE =====-->
+
+  <main class="garage-page">
+
+    <section class="garage-hero">
+
+      <span class="section-label">PERSONAL COLLECTION</span>
+
+      <h1>
+        МОЙ<br>
+        <span>ГАРАЖ</span>
+      </h1>
+
+      <p>
+        Добавляй свои автомобили и собирай собственную коллекцию JDM.
+      </p>
+
+    </section>
+
+
+    <!--===== GARAGE TOP =====-->
+
+    <section class="garage">
+
+      <div class="garage-top">
+
+        <div>
+          <h2>МОИ АВТОМОБИЛИ</h2>
+          <span id="garage-count">0 CARS</span>
+        </div>
+
+        <button
+          type="button"
+          id="add-car-button"
+          class="garage-add-button"
+        >
+          + ДОБАВИТЬ МАШИНУ
+        </button>
+
+      </div>
+
+
+      <!--===== ADD FORM =====-->
+
+      <div
+        id="garage-form"
+        class="garage-form"
+        hidden
+      >
+
+        <div class="garage-form-header">
+
+          <div>
+            <span class="section-label">NEW CAR</span>
+            <h2>ДОБАВИТЬ МАШИНУ</h2>
+          </div>
+
+          <button
+            type="button"
+            id="close-form"
+            class="garage-close-button"
+          >
+            ×
+          </button>
+
+        </div>
+
+
+        <form id="car-form">
+
+          <!-- PHOTO -->
+
+          <div class="garage-photo-field">
+
+            <label for="car-photo">
+              ФОТО АВТОМОБИЛЯ
+            </label>
+
+            <div class="garage-photo-preview">
+
+              <img
+                id="photo-preview"
+                src=""
+                alt="Предпросмотр"
+              >
+
+              <span id="photo-placeholder">
+                ВЫБЕРИТЕ ФОТО
+              </span>
+
+            </div>
+
+            <input
+              type="file"
+              id="car-photo"
+              accept="image/*"
+            >
+
+          </div>
+
+
+          <!-- BASIC INFORMATION -->
+
+          <div class="garage-form-section">
+
+            <h3>ОБЩАЯ ИНФОРМАЦИЯ</h3>
+
+            <div class="garage-form-grid">
+
+              <div class="garage-field">
+
+                <label for="car-brand">
+                  МАРКА *
+                </label>
+
+                <input
+                  type="text"
+                  id="car-brand"
+                  placeholder="Например: Toyota"
+                  required
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-model">
+                  МОДЕЛЬ *
+                </label>
+
+                <input
+                  type="text"
+                  id="car-model"
+                  placeholder="Например: Supra"
+                  required
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-version">
+                  КОМПЛЕКТАЦИЯ
+                </label>
+
+                <input
+                  type="text"
+                  id="car-version"
+                  placeholder="Например: RZ"
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-year">
+                  ГОД
+                </label>
+
+                <input
+                  type="text"
+                  id="car-year"
+                  placeholder="Например: 1998"
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-country">
+                  СТРАНА
+                </label>
+
+                <input
+                  type="text"
+                  id="car-country"
+                  placeholder="Например: Япония"
+                  value="Япония"
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-body">
+                  КУЗОВ
+                </label>
+
+                <input
+                  type="text"
+                  id="car-body"
+                  placeholder="Например: Купе"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- TECHNICAL INFORMATION -->
+
+          <div class="garage-form-section">
+
+            <h3>ТЕХНИЧЕСКАЯ ИНФОРМАЦИЯ</h3>
+
+            <div class="garage-form-grid">
+
+              <div class="garage-field">
+
+                <label for="car-engine">
+                  ДВИГАТЕЛЬ
+                </label>
+
+                <input
+                  type="text"
+                  id="car-engine"
+                  placeholder="Например: 2JZ-GTE"
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-volume">
+                  ОБЪЁМ
+                </label>
+
+                <input
+                  type="text"
+                  id="car-volume"
+                  placeholder="Например: 3.0 л"
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-power">
+                  МОЩНОСТЬ
+                </label>
+
+                <input
+                  type="text"
+                  id="car-power"
+                  placeholder="Например: 280 л.с."
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-drive">
+                  ПРИВОД
+                </label>
+
+                <input
+                  type="text"
+                  id="car-drive"
+                  placeholder="Например: RWD"
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-transmission">
+                  КОРОБКА
+                </label>
+
+                <input
+                  type="text"
+                  id="car-transmission"
+                  placeholder="Например: 5-ступенчатая механика"
+                >
+
+              </div>
+
+
+              <div class="garage-field">
+
+                <label for="car-weight">
+                  МАССА
+                </label>
+
+                <input
+                  type="text"
+                  id="car-weight"
+                  placeholder="Например: 1500 кг"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- DESCRIPTION -->
+
+          <div class="garage-form-section">
+
+            <h3>О МАШИНЕ</h3>
+
+            <div class="garage-field">
+
+              <label for="car-description">
+                ОПИСАНИЕ
+              </label>
+
+              <textarea
+                id="car-description"
+                rows="5"
+                placeholder="Расскажи о своей машине..."
+              ></textarea>
+
+            </div>
+
+          </div>
+
+
+          <!-- BUTTONS -->
+
+          <div class="garage-form-actions">
+
+            <button
+              type="button"
+              id="cancel-car"
+              class="garage-cancel-button"
+            >
+              ОТМЕНА
+            </button>
+
+            <button
+              type="submit"
+              class="garage-save-button"
+            >
+              СОХРАНИТЬ МАШИНУ
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+
+      <!--===== CARS =====-->
+
+      <div
+        id="garage-empty"
+        class="garage-empty"
+      >
+
+        <div class="garage-empty-number">
+          00
+        </div>
+
+        <h2>ГАРАЖ ПУСТ</h2>
+
+        <p>
+          Добавь свой первый автомобиль,
+          чтобы он появился здесь.
+        </p>
+
+        <button
+          type="button"
+          id="empty-add-button"
+          class="garage-empty-button"
+        >
+          + ДОБАВИТЬ МАШИНУ
+        </button>
+
+      </div>
+
+
+      <div
+        id="garage-grid"
+        class="cars-grid garage-grid"
+      ></div>
+
+    </section>
+
+  </main>
+
+
+  <!--===== FOOTER =====-->
+
+  <footer class="site-footer">
+
+    <div class="stripe-divider"></div>
+
+    <div class="footer-grid">
+
+      <div class="footer-col footer-brand">
+
+        <span class="logo-mark">VEN1KFC</span>
+
+        <p>
+          Сообщество и медиа про японские машины, свап-двигатели,
+          дрифт и горные перевалы. Строим историю, а не гаджеты.
+        </p>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>НАВИГАЦИЯ</h3>
+
+        <ul class="footer-links">
+
+          <li>
+            <a href="./">Каталог</a>
+          </li>
+
+          <li>
+            <a href="./history.html">История JDM</a>
+          </li>
+
+          <li>
+            <a href="./garage.html">Мой гараж</a>
+          </li>
+
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+
+          <li>
+            <a href="#">Сообщество</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>СООБЩЕСТВО</h3>
+
+        <ul class="footer-links">
+
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Discord</a></li>
+
+        </ul>
+
+        <div class="social-row">
+
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="Discord">DC</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Touge. Built for the street.
+      </span>
+
+      <span>
+        MADE VEN1KFC FOR JDMs FAN
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script type="module" src="./src/garage.js"></script>
+
+</body>
+</html>
